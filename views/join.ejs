@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap.css' />
+    <style>
+    .radio{
+      display: inline;
+      vertical-align: bottom;
+    }
+    input{
+      padding-bottom:10px;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <form class="form-horizontal" action="/users/join" method="post">
+        <h2 class="form-signin-heading"><%= title %></h2>
+        <input type="text" class="form-control" placeholder="Email address" name="email" autofocus>
+        <input type="password" class="form-control" placeholder="Password" name="pw">
+        <input type="text" class="form-control" placeholder="name" name="name">
+        <label class="checkbox">
+        </label>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Join!!</button>
+      </form>
+
+    </div> <!-- /container -->
+  </body>
+</html>
